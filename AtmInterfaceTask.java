@@ -3,6 +3,7 @@
 import java.util.*;
 import java.lang.*;
 
+//To authenticate user_id and pin
 class Authentication
 {
     public static int balance,deposit_amount,withdraw_amount,transfer_amount;
@@ -19,6 +20,7 @@ class Authentication
     }
 }
 
+//this class contains Functions deposit,withdraw,check_balance,fund transfer
 class Operation extends Authentication
 {
     static void deposit()
@@ -82,6 +84,7 @@ class Operation extends Authentication
     }   
 }
 
+//This class includes function for transaction history
 class History extends Authentication
 {
     static void transactionHistory()
@@ -99,6 +102,7 @@ class History extends Authentication
         }
     }
 }
+
 
 class Execution extends Authentication
 {
@@ -139,6 +143,7 @@ class Execution extends Authentication
     }
 }
 
+//It is main function class
 class AtmInterfaceTask
 {
     public static void main(String args[])
