@@ -23,6 +23,7 @@ class Authentication
 //this class contains Functions deposit,withdraw,check_balance,fund transfer
 class Operation extends Authentication
 {
+    //Function to deposit amount
     static void deposit()
     {
         Scanner sc=new Scanner(System.in);
@@ -32,7 +33,8 @@ class Operation extends Authentication
         System.out.println(deposit_amount+" has been successfully credited into Account Number "+accN1);
         System.out.println("Your updated balance is:"+balance);
     }
-
+    
+    //Function to withdraw amount
     static void withdraw()
     {
         Scanner sc=new Scanner(System.in);
@@ -49,12 +51,14 @@ class Operation extends Authentication
             System.out.println("Your updated balance is:"+balance);
         }
     }
-
+    
+    //Function to check the balance
     static void check_balance()
     {
         System.out.println("Your current balance is:"+balance);
     }
-
+    
+    //Function to transfer amount from one account to another account
     static void fund_transfer()
     {
         Scanner sc=new Scanner(System.in);
